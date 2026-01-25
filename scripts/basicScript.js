@@ -117,3 +117,16 @@ cancelSettingsButton.addEventListener('click', () => {
     attributes.borderColor
   );
 });
+
+modelToggle.addEventListener('change', () => {
+  basicSVG.innerHTML = '';
+  basicSVG.setAttribute(
+    'width',
+    Math.min(attributes.width, window.innerWidth * 0.8)
+  );
+  if (modelToggle.checked) {
+    mathVisual.fractionBar(basicSVG, mixedNum, attributes);
+  } else {
+    mathVisual.fractionCircle(basicSVG, mixedNum, attributes);
+  }
+});

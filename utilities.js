@@ -541,7 +541,6 @@ function mixedNumCircles(
 ) {
   let numWholes = 0;
   let maxWholes = 0; // This is how many circles will be drawn on the svg
-  console.log('Beginning of mixedNumCircles', mixedNum.wholeNum);
   if (mixedNum.denominator === 0) {
     numWholes = 0;
   } else if (mixedNum.numerator === 0 && mixedNum.denominator > 0) {
@@ -549,7 +548,6 @@ function mixedNumCircles(
   } else {
     numWholes = Math.floor(mixedNum.numerator / mixedNum.denominator);
   }
-  console.log(numWholes);
 
   if (mixedNum.denominator === 0) {
     maxWholes = mixedNum.wholeNum;
@@ -562,7 +560,6 @@ function mixedNumCircles(
     maxWholes = numWholes + mixedNum.wholeNum + 1;
   } // Determines how many total circles will be drawn even if the last one is only partially shaded
 
-  console.log(maxWholes);
   let horizontalSpacing = 0;
   let verticalSpacing = 0;
   let circlesPerLine = maxWholes;
