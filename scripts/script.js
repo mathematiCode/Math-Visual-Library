@@ -18,7 +18,6 @@ function saveSettings(svg, numColors) {
   for (let i = 0; i < numColors; i++) {
     customizations.colors[i] = document.getElementById(`color${i + 1}`).value;
   }
-  console.log(customizations.colors);
   customizations.borderColor = document.getElementById('border-color').value;
   let width = document.getElementById('width-input').value;
   let height = document.getElementById('height-input').value;

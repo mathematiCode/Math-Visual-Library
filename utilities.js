@@ -545,7 +545,7 @@ function mixedNumCircles(
   if (mixedNum.denominator === 0) {
     numWholes = 0;
   } else if (mixedNum.numerator === 0 && mixedNum.denominator > 0) {
-    numWholes = 1;
+    numWholes = 0;
   } else {
     numWholes = Math.floor(mixedNum.numerator / mixedNum.denominator);
   }
